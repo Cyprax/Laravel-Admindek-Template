@@ -6,7 +6,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 
 
-use App\Swep\Interfaces\SubmenuInterface;
+use App\Core\Interfaces\SubmenuInterface;
 use Illuminate\Http\Request;
 
 

@@ -29,26 +29,9 @@ class EventServiceProvider extends ServiceProvider{
 
     protected $subscribe = [
 
-        'App\Swep\Subscribers\DisbursementVoucherSubscriber',
-        'App\Swep\Subscribers\UserSubscriber',
-        'App\Swep\Subscribers\ProfileSubscriber',
-        'App\Swep\Subscribers\MenuSubscriber',
-        'App\Swep\Subscribers\SignatorySubscriber',
-        'App\Swep\Subscribers\DepartmentSubscriber',
-        'App\Swep\Subscribers\DepartmentUnitSubscriber',
-        'App\Swep\Subscribers\ProjectCodeSubscriber',
-        'App\Swep\Subscribers\FundSourceSubscriber',
-        'App\Swep\Subscribers\LeaveApplicationSubscriber',
-        'App\Swep\Subscribers\EmployeeSubscriber',
-        'App\Swep\Subscribers\EmployeeServiceRecordSubscriber',
-        'App\Swep\Subscribers\EmployeeTrainingSubscriber',
-        'App\Swep\Subscribers\DocumentSubscriber',
-        'App\Swep\Subscribers\DocumentFolderSubscriber',
-        'App\Swep\Subscribers\PermissionSlipSubscriber',
-        'App\Swep\Subscribers\LeaveCardSubscriber',
-        'App\Swep\Subscribers\ApplicantSubscriber',
-        'App\Swep\Subscribers\CourseSubscriber',
-        'App\Swep\Subscribers\PlantillaSubscriber',
+        'App\Core\Subscribers\UserSubscriber',
+        'App\Core\Subscribers\ProfileSubscriber',
+        'App\Core\Subscribers\MenuSubscriber',
         
     ];
 

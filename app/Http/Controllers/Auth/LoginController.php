@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Swep\Interfaces\UserInterface;
+use App\Core\Interfaces\UserInterface;
 
 use Auth;
 use Session;
 use Illuminate\Http\Request;
-use App\Swep\Helpers\__cache;
+use App\Core\Helpers\__cache;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'swep'),
+    'name' => env('APP_NAME', 'laravel_admindek_template'),
 
     /*
     |--------------------------------------------------------------------------
@@ -218,18 +218,18 @@ return [
         'Str' => 'Illuminate\Support\Str',
 
         /** View Helper **/
-        '__chart' => App\Swep\ViewHelpers\__chart::class,
-        '__form' => App\Swep\ViewHelpers\__form::class,
-        '__html' => App\Swep\ViewHelpers\__html::class,
-        '__js' => App\Swep\ViewHelpers\__js::class,  
+        '__chart' => App\Core\ViewHelpers\__chart::class,
+        '__form' => App\Core\ViewHelpers\__form::class,
+        '__html' => App\Core\ViewHelpers\__html::class,
+        '__js' => App\Core\ViewHelpers\__js::class,  
 
         /** Helper **/
-        '__cache' => App\Swep\Helpers\__cache::class, 
-        '__sanitize' => App\Swep\Helpers\__sanitize::class,
-        '__dataType' => App\Swep\Helpers\__dataType::class, 
-        '__print' => App\Swep\Helpers\__print::class, 
-        '__static' => App\Swep\Helpers\__static::class,
-        '__dynamic' => App\Swep\Helpers\__dynamic::class,
+        '__cache' => App\Core\Helpers\__cache::class, 
+        '__sanitize' => App\Core\Helpers\__sanitize::class,
+        '__dataType' => App\Core\Helpers\__dataType::class, 
+        '__print' => App\Core\Helpers\__print::class, 
+        '__static' => App\Core\Helpers\__static::class,
+        '__dynamic' => App\Core\Helpers\__dynamic::class,
 
     ],
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use App\Swep\Services\ProfileService;
+use App\Core\Services\ProfileService;
 use App\Http\Requests\Profile\ProfileUpdateAccountUsernameRequest;
 use App\Http\Requests\Profile\ProfileUpdateAccountPasswordRequest;
 use App\Http\Requests\Profile\ProfileUpdateAccountColorRequest;

@@ -74,7 +74,6 @@
             <th>@sortablelink('firstname', 'Name')</th>
             <th>@sortablelink('is_online', 'Online')</th>
             <th>@sortablelink('is_active', 'Active')</th>
-            <th>Sync</th>
             <th style="width: 150px">Action</th>
           </tr>
           @foreach($users as $data) 
@@ -83,8 +82,7 @@
               <td>{{ $data->fullname }}</td>
               <td>{!! $data->is_online == 1 ?  $span_check : $span_times !!}</td>
               <td>{!! $data->is_active == 1 ? $span_check : $span_times !!}</td>
-              <td>{!! empty($data->employee) ? $span_times : '<p class="text-green"><b>'. $data->employee->employee_no .'</b></p>' !!}</td>
-              <td> 
+              <td>
                 <select id="action" class="form-control input-md">
                   <option value="">Select</option>
                   <option data-type="1" data-url="{{ route('dashboard.user.show', $data->slug) }}">Details</option>
@@ -102,12 +100,6 @@
                   @endif
 
                   <option data-type="1" data-action="reset_password" data-url="{{ route('dashboard.user.reset_password', $data->slug) }}">Reset Password</option>
-                  
-                  @if(empty($data->employee))
-                    <option data-type="1" data-action="sync_employee" data-url="{{ route('dashboard.user.sync_employee', $data->slug) }}">Sync</option>
-                  @else
-                    <option data-type="0" data-action="unsync_employee" data-url="{{ route('dashboard.user.unsync_employee', $data->slug) }}">Unsync</option>
-                  @endif
 
                 </select>
               </td>
@@ -140,10 +132,6 @@
   </form>
 
   <form id="from_user_deactivate" method="POST" style="display: none;">
-    @csrf
-  </form>
-
-  <form id="from_user_unsync" method="POST" style="display: none;">
     @csrf
   </form>
 
@@ -183,9 +171,6 @@
 
     {{-- CALL DEACTIVATE FORM --}}
     {!! __js::form_submitter_via_action('deactivate', 'from_user_deactivate') !!}
-
-    {{-- CALL UNSYNC FORM --}}
-    {!! __js::form_submitter_via_action('unsync_employee', 'from_user_unsync') !!}
 
 
     {{-- UPDATE TOAST --}}

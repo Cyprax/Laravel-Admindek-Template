@@ -68,11 +68,6 @@ class User extends Authenticatable{
     public function userSubmenu() {
         return $this->hasMany('App\Models\UserSubmenu','user_id','user_id');
     }
-
-
-    public function employee(){
-        return $this->hasOne('App\Models\Employee', 'user_id', 'user_id');
-    }
     
 
     

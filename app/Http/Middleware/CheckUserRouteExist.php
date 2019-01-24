@@ -3,8 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Swep\Interfaces\UserMenuInterface;
-use App\Swep\Interfaces\UserSubmenuInterface;
+use App\Core\Interfaces\UserMenuInterface;
+use App\Core\Interfaces\UserSubmenuInterface;
 
 class CheckUserRouteExist{
 

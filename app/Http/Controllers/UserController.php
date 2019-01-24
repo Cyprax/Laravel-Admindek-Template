@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Swep\Services\UserService;
+use App\Core\Services\UserService;
 use App\Http\Requests\User\UserFormRequest;
 use App\Http\Requests\User\UserFilterRequest;
 use App\Http\Requests\User\UserResetPasswordRequest;
