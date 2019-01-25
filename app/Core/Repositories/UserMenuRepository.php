@@ -35,7 +35,6 @@ class UserMenuRepository extends BaseRepository implements UserMenuInterface {
         $user_menu->user_menu_id = $this->getUserMenuIdInc();
         $user_menu->user_id = $user->user_id;
         $user_menu->menu_id = $menu->menu_id;
-        $user_menu->category = $menu->category;
         $user_menu->name = $menu->name;
         $user_menu->route = $menu->route;
         $user_menu->icon = $menu->icon;
@@ -79,16 +78,15 @@ class UserMenuRepository extends BaseRepository implements UserMenuInterface {
 
 
 
-    public function getByCategory($cat){
+    public function getAll(){
 
-        $user_menus_u = $this->cache->remember('user_menus:getByUserId:'. $this->auth->user()->user_id .':'.$cat.'', 240, function() use ($cat){
+        $user_menus = $this->cache->remember('user_menus:getAll:'. $this->auth->user()->user_id .'', 240, function(){
           return $this->user_menu->where('user_id', $this->auth->user()->user_id)
-                                 ->where('category', $cat)
                                  ->with('userSubMenu')
                                  ->get();
         });
 
-        return $user_menus_u;
+        return $user_menus;
         
     }
 
