@@ -1,58 +1,89 @@
+
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Laravel AdminLTE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Laravel Admindek</title>
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
     @include('layouts.css-plugins')
-
   </head>
-  <body class="hold-transition skin-green layout-top-nav">
-    <div class="wrapper">
-      <header class="main-header">
-        <nav class="navbar navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a href="#" class="navbar-brand"><b>Laravel-AdminLTE Template</b></a>
+
+
+  <body>
+
+    <div class="loader-bg">
+      <div class="loader-bar"></div>
+    </div>
+
+    <div id="pcoded" class="pcoded">
+      <div class="pcoded-overlay-box"></div>
+
+      {{-- NAVIGATION --}}
+      <div class="pcoded-container navbar-wrapper">
+        <nav class="navbar header-navbar pcoded-header">
+          <div class="navbar-wrapper">
+            <div class="navbar-logo">
+              <a href="#" style="font-size:17px;">Laravel Admindek</a>
             </div>
-            <div class="navbar-custom-menu">
-              <ul class="nav navbar-nav">
-                <li class="notifications-menu"><a href="#">Login</a></li>
-                <li class="notifications-menu"><a href="#">Info </a></li>
+            <div class="navbar-container container-fluid">
+              <ul class="nav-left">
+                <li>
+                  <a href="#" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                    <i class="full-screen feather icon-maximize"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav-right">
+                <li class="header-notification">
+                  <div class="dropdown-primary dropdown">
+                    <a href="#">Login</a>
+                  </div>
+                </li>
+                <li class="header-notification">
+                  <div class="dropdown-primary dropdown">
+                    <a href="#">Info</a>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
-      </header>
-      <div class="content-wrapper">
-        <div class="container">
-          @yield('content')
+      </div>
+
+      {{-- BODY --}}
+      <div class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+          <div class="pcoded-content">
+
+            <div class="pcoded-inner-content">
+              <div class="main-body">
+                <div class="page-wrapper">
+                  <div class="page-body">
+
+                    @yield('content')
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
-      <footer class="main-footer">
-        <div class="container">
-          <div class="pull-right hidden-xs">
-            <b>Version</b> 1.0
-          </div>
-          <strong>Copyright &copy; 2018-2019 <a href="#">toomelette</a>.</strong> All rights
-          reserved.
-        </div>
-      </footer>
-      
+
     </div>
 
-    @include('layouts.js-plugins')
-    
-    <script type="text/javascript">
-      
-      @yield('scripts')
-
-    </script>
-    
-
   </body>
+
+  @include('layouts.js-plugins')
+
 </html>

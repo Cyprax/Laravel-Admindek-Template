@@ -1,46 +1,19 @@
 
+<script type="text/javascript" src="{{ asset('template2/bower_components/jquery/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/bower_components/jquery-ui/js/jquery-ui.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/bower_components/popper.js/js/popper.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/bower_components/bootstrap/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/bower_components/jquery-slimscroll/js/jquery.slimscroll.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/bower_components/modernizr/js/modernizr.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/bower_components/modernizr/js/css-scrollbars.js') }}"></script>
 
-<script type="text/javascript" src="{{ asset('template/bower_components/jquery/dist/jquery.min.js') }}"></script>  
+<script type="text/javascript" src="{{ asset('template2/assets/pages/waves/js/waves.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/assets/pages/prism/custom-prism.js') }}"></script>
 
-<script type="text/javascript" src="{{ asset('template/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/fastclick/lib/fastclick.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/select2/dist/js/select2.full.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/ckeditor/ckeditor.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/plugins/pjax/jquery.pjax.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/plugins/toast/jquery.toast.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/plugins/price-format/jquery.priceformat.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/plugins/iCheck/icheck.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/plugins/timepicker/bootstrap-timepicker.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/plugins/bootstrap-fileinput/js/fileinput.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/dist/js/adminlte.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-
-
-{{-- Charts --}}
-<script type="text/javascript" src="{{ asset('template/bower_components/Flot/jquery.flot.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/Flot/jquery.flot.resize.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/Flot/jquery.flot.pie.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('template/bower_components/Flot/jquery.flot.categories.js') }}"></script>
-
-
-
-
-
+<script type="text/javascript" src="{{ asset('template2/assets/js/pcoded.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/assets/js/vertical/vertical-layout.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/assets/js/script.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/assets/js/pcoded.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/assets/js/vertical/menu/menu-hori-fixed.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template2/assets/js/script.js') }}"></script>
